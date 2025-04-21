@@ -1,4 +1,4 @@
-# Parallel BMP Image Flipping
+# MPI Image Flipping
 
 This project implements a parallel BMP image flipping tool using two models:
 
