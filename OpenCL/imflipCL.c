@@ -23,7 +23,7 @@ struct ImgProp {
 
 unsigned char *ReadBMPlin(char* fn) {
     //
-    // TODO Finish Documentation
+    // read an image from the bmp file
     //
 
     // load image file
@@ -56,7 +56,7 @@ unsigned char *ReadBMPlin(char* fn) {
 
 void WriteBMPlin(unsigned char *Img, char* fn) {
     //
-    // TODO Finish Documentation
+    // write the image to a bmp file
     //
     FILE* f = fopen(fn, "wb");
     if (f == NULL) {
@@ -70,7 +70,7 @@ void WriteBMPlin(unsigned char *Img, char* fn) {
 
 cl_program build_program(cl_context context, cl_device_id device, const char *filename) {
     //
-    // TODO Finish Documentation
+    // build the argued kernel file
     //
 
     FILE *fp;
@@ -112,7 +112,7 @@ cl_program build_program(cl_context context, cl_device_id device, const char *fi
 
 void print_build_log(cl_program program, cl_device_id device) {
     //
-    // TODO Finish Documentation
+    // print the build log of OpenCL to see inside the runtime compiler
     //
     size_t log_size;
     cl_int err;
@@ -146,7 +146,7 @@ void print_build_log(cl_program program, cl_device_id device) {
 
 void execute_kernel(cl_command_queue queue, cl_kernel kernel, cl_mem input_img, cl_mem output_img, size_t global_size, size_t local_size) {
     //
-    // TODO Finish Documentation
+    // execute the target opencl kernel with the desired command queue and arguments
     //
     cl_int err;
     
