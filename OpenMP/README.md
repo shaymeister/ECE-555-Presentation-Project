@@ -18,9 +18,9 @@ make pi
 ## Pi Program
 ### General
 This program implements the estimation of Pi using the following formula:
-$$
+```math
 \pi = \int_0^1{\frac{4}{1 + x^2}}dx
-$$
+```
 
 The program implements calculating pi with multiple versions of increasing performance.
 
